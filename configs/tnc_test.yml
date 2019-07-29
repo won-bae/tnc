@@ -1,0 +1,17 @@
+model: &model
+  name: megadetector
+  graph_path: '/home/wbae/tnc/checkpoints/megadetector_v3.pb'
+
+eval: &eval
+  threshold: 0.5
+  use_roc: False
+  store_detection_results: False
+  output_dir: ''
+
+data: &data
+  image_dir: '/mnt/nfs/work1/ds4cg/tnc'
+  json_file: 'test.json'
+  # recursive: True
+  batch_size: 12
+  label_type: binary
+

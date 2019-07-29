@@ -1,0 +1,6 @@
+.cenv
+*.pkl
+*.ipynb
+out/*
+checkpoints/*
+test.py
