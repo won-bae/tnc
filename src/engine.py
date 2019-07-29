@@ -80,11 +80,11 @@ class Engine(BaseEngine):
         classes = np.concatenate(classes, axis=0)
         labels = np.concatenate(labels, axis=0)
 
-        information = {'paths': image_paths, 'classes': classes,
-                       'scores': scores, 'boxes': boxes}
-        information_path = 'information_test.pkl'
-        with open(information_path, 'wb') as f:
-            pickle.dump(information, f)
+        #information = {'paths': image_paths, 'classes': classes,
+        #               'scores': scores, 'boxes': boxes}
+        #information_path = 'information_test.pkl'
+        #with open(information_path, 'wb') as f:
+        #    pickle.dump(information, f)
 
         num_images = len(image_paths)
         predictions = self._classify(
